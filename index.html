@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChatbotIA — Chatbot inteligente para clínicas dentales. Atención al paciente 24/7, respuestas automáticas y gestión de consultas con IA.">
+  <meta name="theme-color" content="#2563eb">
+  <title>ChatbotIA — Chatbot Inteligente para Clínicas Dentales</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F916;</text></svg>">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <span class="brand-icon">&#x1F916;</span>
+        <span>ChatbotIA</span>
+      </a>
+      <div class="nav-right">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-option active" data-lang-btn="es">ES</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-option" data-lang-btn="en">EN</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-option" data-lang-btn="ca">CA</span>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          &#9776;
+        </button>
+      </div>
+      <ul class="navbar-nav" id="nav-menu">
+        <li><a href="#problema" data-i18n="nav.problem">El problema</a></li>
+        <li><a href="#solucion" data-i18n="nav.solution">Solución</a></li>
+        <li><a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a></li>
+        <li><a href="#cta" class="btn btn-primary nav-cta" data-i18n="nav.cta">Solicitar info</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1600&q=80" alt="Dental clinic reception" class="hero-bg-img">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge" data-i18n="hero.badge">IA para Clínicas Dentales</div>
+        <h1 data-i18n="hero.title">Tu clínica pierde pacientes cada vez que cierra la puerta</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Mientras tu equipo descansa, los pacientes buscan respuestas y no las encuentran. Muchos no vuelven a llamar. Con ChatbotIA, tu clínica atiende las 24 horas — sin contratar a nadie más.</p>
+        <div class="hero-actions">
+          <a href="#cta" class="btn btn-primary btn-lg" data-i18n="hero.cta_primary">Quiero saber más</a>
+          <a href="https://labin.net" target="_blank" rel="noopener" class="btn btn-secondary btn-lg" id="demo-link" data-i18n="hero.cta_secondary">Ver demo en vivo</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value">24/7</div>
+            <div class="hero-stat-label" data-i18n="hero.stat1">Atención sin parar</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">&lt;2s</div>
+            <div class="hero-stat-label" data-i18n="hero.stat2">Tiempo de respuesta</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">90%</div>
+            <div class="hero-stat-label" data-i18n="hero.stat3">Consultas resueltas</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">0</div>
+            <div class="hero-stat-label" data-i18n="hero.stat4">Pacientes perdidos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PAIN POINTS ==================== -->
+  <section class="section" id="problema">
+    <div class="container">
+      <h2 class="section-title" data-i18n="problem.title">Cada hora que tu clínica está cerrada, pierdes dinero</h2>
+      <p class="section-subtitle" data-i18n="problem.subtitle">No es solo un inconveniente — es dinero que se va a la competencia.</p>
+
+      <!-- Pain Point 1 -->
+      <div class="pain-block">
+        <div class="pain-image">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Empty dental clinic at night" loading="lazy">
+        </div>
+        <div class="pain-content">
+          <div class="pain-number">01</div>
+          <h3 data-i18n="problem.p1_title">Son las 21:00. Un paciente busca dentista. Tu teléfono no suena.</h3>
+          <p data-i18n="problem.p1_desc">El 40% de las búsquedas de dentista ocurren fuera del horario laboral. Ese paciente que busca "dentista cerca de mí" a las 9 de la noche no va a esperar hasta mañana — va a llamar al primero que le conteste. Si no eres tú, será otro.</p>
+          <div class="pain-highlight" data-i18n="problem.p1_highlight">Cada llamada perdida es una primera visita que nunca ocurrirá.</div>
+        </div>
+      </div>
+
+      <!-- Pain Point 2 -->
+      <div class="pain-block reverse">
+        <div class="pain-image">
+          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80" alt="Stressed dental receptionist on the phone" loading="lazy">
+        </div>
+        <div class="pain-content">
+          <div class="pain-number">02</div>
+          <h3 data-i18n="problem.p2_title">Tu recepcionista pasa 3 horas al día contestando las mismas preguntas.</h3>
+          <p data-i18n="problem.p2_desc">"¿Qué horarios tenéis?" "¿Cuánto cuesta una limpieza?" "¿Necesito cita previa?" Tu personal más valioso está atrapado en un bucle de preguntas repetitivas en vez de atender a los pacientes que ya están en la clínica.</p>
+          <div class="pain-highlight" data-i18n="problem.p2_highlight">Estás pagando a un profesional para hacer el trabajo de un FAQ.</div>
+        </div>
+      </div>
+
+      <!-- Pain Point 3 -->
+      <div class="pain-block">
+        <div class="pain-image">
+          <img src="https://images.unsplash.com/photo-1445527815219-ecbfec67492e?auto=format&fit=crop&w=800&q=80" alt="Patient waiting for dentist response" loading="lazy">
+        </div>
+        <div class="pain-content">
+          <div class="pain-number">03</div>
+          <h3 data-i18n="problem.p3_title">El paciente que espera 2 horas por una respuesta no vuelve.</h3>
+          <p data-i18n="problem.p3_desc">La expectativa actual es inmediatez. Si un paciente manda un WhatsApp o un email y no recibe respuesta en minutos, su percepción de tu clínica baja. La frustración se convierte en una reseña negativa — o simplemente desaparecen.</p>
+          <div class="pain-highlight" data-i18n="problem.p3_highlight">La lentitud en responder te cuesta más que cualquier tratamiento gratuito.</div>
+        </div>
+      </div>
+
+      <!-- Cost Callout -->
+      <div class="cost-callout">
+        <div class="cost-callout-inner">
+          <h3 data-i18n="problem.callout_title">¿Cuánto te cuesta esto al mes?</h3>
+          <p data-i18n="problem.callout_desc">Si pierdes solo 5 pacientes nuevos al mes por no estar disponible, y cada paciente vale una media de $800 en tratamientos a lo largo del año, son <strong>$4,000 al mes</strong> que se van a otra clínica. Cada mes. Sin que lo notes.</p>
+          <p class="callout-kicker" data-i18n="problem.callout_kicker">Un chatbot con IA te cuesta menos que una recepcionista — y trabaja las 24 horas, los 365 días del año.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SOLUTION / FEATURES ==================== -->
+  <section class="section bg-alt" id="solucion">
+    <div class="container">
+      <h2 class="section-title" data-i18n="solution.title">Un asistente que nunca duerme, nunca se cansa y nunca pierde un paciente</h2>
+      <p class="section-subtitle" data-i18n="solution.subtitle">ChatbotIA es un chatbot con inteligencia artificial avanzada que conversa de forma natural, responde con la información de tu clínica y atiende a tus pacientes cuando tú no puedes.</p>
+
+      <div class="solution-hero-img">
+        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1200&q=80" alt="Modern dental clinic with technology" loading="lazy">
+      </div>
+
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">&#x1F4C4;</div>
+          <h4 data-i18n="solution.f1_title">Respuestas precisas desde tu documentación</h4>
+          <p data-i18n="solution.f1_desc">El chatbot aprende de tus FAQs, servicios, horarios, protocolos y fichas técnicas. Responde exactamente como tú lo harías.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">&#x1F310;</div>
+          <h4 data-i18n="solution.f2_title">Búsqueda inteligente en internet</h4>
+          <p data-i18n="solution.f2_desc">Cuando la información no está en tus documentos, busca en internet — excluyendo automáticamente las webs de la competencia.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">&#x1F517;</div>
+          <h4 data-i18n="solution.f3_title">Se instala directo en tu web</h4>
+          <p data-i18n="solution.f3_desc">Un widget personalizado que se integra en tu página web en minutos. Especialmente compatible con WordPress.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">&#x1F4CA;</div>
+          <h4 data-i18n="solution.f4_title">Todas las conversaciones registradas</h4>
+          <p data-i18n="solution.f4_desc">Cada conversación se guarda automáticamente en Google Sheets para que puedas revisar qué preguntan tus pacientes.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">&#x1F4F1;</div>
+          <h4 data-i18n="solution.f5_title">También por WhatsApp</h4>
+          <p data-i18n="solution.f5_desc">El chatbot puede atender pacientes directamente por WhatsApp — el canal que ya usan para comunicarse contigo.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">&#x1F399;</div>
+          <h4 data-i18n="solution.f6_title">Asistente de voz</h4>
+          <p data-i18n="solution.f6_desc">Para pacientes que prefieren hablar, ofrecemos un asistente de voz con IA conversacional avanzada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CHAT DEMO ==================== -->
+  <section class="section" id="demo-preview">
+    <div class="container">
+      <h2 class="section-title" data-i18n="demo.title">Así conversa con tus pacientes</h2>
+      <p class="section-subtitle" data-i18n="demo.subtitle">Conversaciones naturales, respuestas precisas, disponible a cualquier hora.</p>
+      <div class="demo-wrapper">
+        <div class="chat-mockup large">
+          <div class="chat-header">
+            <span class="chat-dot green"></span>
+            <span class="chat-header-text" data-i18n="demo.chat_header">Clínica Dental Somrís — Asistente IA</span>
+          </div>
+          <div class="chat-body">
+            <div class="chat-time">22:47</div>
+            <div class="chat-msg user" data-i18n="demo.chat_user1">Hola, me duele una muela desde ayer. ¿Podéis atenderme mañana?</div>
+            <div class="chat-msg bot" data-i18n="demo.chat_bot1">¡Hola! Siento que tengas dolor. Tenemos disponibilidad mañana a las 9:30 y a las 12:00 para urgencias. ¿Cuál te viene mejor? Si el dolor es muy intenso, puedo darte algunos consejos mientras tanto.</div>
+            <div class="chat-msg bot" data-i18n="demo.chat_bot2">Perfecto, las 9:30. Dime tu nombre y un número de teléfono para reservarte la cita.</div>
+            <div class="chat-msg user" data-i18n="demo.chat_user2">María García, 612 345 678.</div>
+            <div class="chat-msg bot" data-i18n="demo.chat_bot3">Listo, María. Te he reservado para mañana a las 9:30. Solo trae tu tarjeta sanitaria y, si tienes radiografías recientes, tráelas también. Estamos en Calle Mayor 15. ¿Necesitas algo más?</div>
+          </div>
+        </div>
+        <a href="https://labin.net" target="_blank" rel="noopener" class="btn btn-primary btn-lg demo-cta" id="demo-link-2" data-i18n="demo.cta">Probar el chatbot en vivo</a>
+        <p class="demo-note" data-i18n="demo.note">Esta demo está activa en una empresa de otro sector. El chatbot para tu clínica se personalizará completamente con tu información y marca.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HOW IT WORKS ==================== -->
+  <section class="section bg-alt" id="como-funciona">
+    <div class="container">
+      <h2 class="section-title" data-i18n="how.title">Funcionando en dos semanas</h2>
+      <p class="section-subtitle" data-i18n="how.subtitle">Nosotros nos encargamos de todo. Tú solo nos envías tu documentación.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-img">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80" alt="Documentation and training" loading="lazy">
+          </div>
+          <div class="step-number">1</div>
+          <h3 data-i18n="how.step1_title">Entrenamos el chatbot con tu información</h3>
+          <p data-i18n="how.step1_desc">Nos envías tus FAQs, servicios, horarios y protocolos. Nosotros entrenamos la IA para que responda como tú lo harías. Sin esfuerzo por tu parte.</p>
+        </div>
+        <div class="step">
+          <div class="step-img">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Website integration" loading="lazy">
+          </div>
+          <div class="step-number">2</div>
+          <h3 data-i18n="how.step2_title">Lo instalamos en tu web</h3>
+          <p data-i18n="how.step2_desc">Integramos el widget directamente en tu página web, personalizado con la imagen de tu clínica. Compatible con WordPress y cualquier web.</p>
+        </div>
+        <div class="step">
+          <div class="step-img">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80" alt="Happy dental patient" loading="lazy">
+          </div>
+          <div class="step-number">3</div>
+          <h3 data-i18n="how.step3_title">Tus pacientes reciben atención 24/7</h3>
+          <p data-i18n="how.step3_desc">Desde el primer día, el chatbot atiende consultas, resuelve dudas y captura datos de pacientes nuevos. Nosotros monitorizamos y ajustamos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BENEFITS ==================== -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <h2 class="section-title" data-i18n="benefits.title">Lo que cambia en tu clínica desde el día 1</h2>
+      <div class="benefits-grid">
+        <div class="benefit">
+          <div class="benefit-icon">&#x1F4B0;</div>
+          <h4 data-i18n="benefits.b1_title">Dejas de perder pacientes</h4>
+          <p data-i18n="benefits.b1_desc">Cada consulta fuera de horario que antes se perdía, ahora se convierte en una cita agendada.</p>
+        </div>
+        <div class="benefit">
+          <div class="benefit-icon">&#x23F0;</div>
+          <h4 data-i18n="benefits.b2_title">Tu equipo respira</h4>
+          <p data-i18n="benefits.b2_desc">Las preguntas repetitivas desaparecen. Tu recepcionista se enfoca en los pacientes que están en la clínica.</p>
+        </div>
+        <div class="benefit">
+          <div class="benefit-icon">&#x2B50;</div>
+          <h4 data-i18n="benefits.b3_title">Mejor experiencia del paciente</h4>
+          <p data-i18n="benefits.b3_desc">Respuestas inmediatas, a cualquier hora. Los pacientes se sienten atendidos y valorados.</p>
+        </div>
+        <div class="benefit">
+          <div class="benefit-icon">&#x1F3A8;</div>
+          <h4 data-i18n="benefits.b4_title">100% adaptado a tu marca</h4>
+          <p data-i18n="benefits.b4_desc">El chatbot habla con tu tono, usa tu información y se integra visualmente con tu web.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA (Email Collection) ==================== -->
+  <section class="section cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2 data-i18n="cta.title">¿Quieres ver cómo funcionaría en tu clínica?</h2>
+        <p data-i18n="cta.subtitle">Déjanos tu email y te contactamos para mostrarte una demo personalizada. Sin compromiso, sin presión.</p>
+        <form class="cta-form" id="cta-form">
+          <input type="email" placeholder="tu@clinica.com" required aria-label="Email" data-i18n-placeholder="cta.placeholder">
+          <button type="submit" class="btn btn-primary" data-i18n="cta.button">Quiero una demo</button>
+        </form>
+        <p class="cta-note" data-i18n="cta.note">Sin spam. Solo te escribiremos para coordinar la demo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="brand-icon">&#x1F916;</span>
+          <span>ChatbotIA</span>
+        </div>
+        <p class="footer-copy">&copy; 2026 ChatbotIA. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
