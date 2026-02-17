@@ -335,9 +335,17 @@
   }
 
   function initLanguage() {
+    // URL parameter takes priority (?lang=es | ?lang=en | ?lang=ca)
+    var urlLang = null;
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var p = params.get("lang");
+      if (p && translations[p]) urlLang = p;
+    } catch (e) {}
+
     var saved = null;
     try { saved = localStorage.getItem("chatbotia-lang"); } catch (e) {}
-    setLanguage(saved || "es");
+    setLanguage(urlLang || saved || "es");
 
     var toggle = document.getElementById("lang-toggle");
     if (toggle) {
