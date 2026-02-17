@@ -332,6 +332,13 @@
     });
 
     try { localStorage.setItem("chatbotia-lang", lang); } catch (e) {}
+
+    // Update URL with ?lang= parameter so it's shareable
+    try {
+      var url = new URL(window.location);
+      url.searchParams.set("lang", lang);
+      history.replaceState(null, "", url);
+    } catch (e) {}
   }
 
   function initLanguage() {
